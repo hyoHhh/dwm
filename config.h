@@ -94,8 +94,8 @@ static const char *sktogglecmd[]  = { "/home/kiteab/scripts/sck-tog.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "80x24", NULL };
 
-static const char *setqwertycmd[]  = { "/home/kiteab/scripts/setxmodmap-qwerty.sh", NULL };
-static const char *setcolemakcmd[]  = { "/home/kiteab/scripts/setxmodmap-colemak.sh", NULL };
+static const char *setgamemapcmd[]  = { "/home/kiteab/scripts/setxmodmap-game.sh", NULL };
+static const char *setcodemapcmd[]  = { "/home/kiteab/scripts/setxmodmap-code.sh", NULL };
 
 static const char *suspendcmd[]  = { "/home/kiteab/scripts/suspend.sh", NULL };
 
@@ -108,8 +108,8 @@ static Key keys[] = {
 	{ MODKEY,              XK_d,                    spawn,          {.v = dmenucmd } },
 	{ MODKEY,              XK_Return,               spawn,          {.v = termcmd } },
 	{ MODKEY,              XK_c,                    spawn,          {.v = browsercmd } },
-	{ MODKEY|ShiftMask,    XK_w,                    spawn,          {.v = setqwertycmd } },
-	{ MODKEY|ShiftMask,    XK_m,                    spawn,          {.v = setcolemakcmd } },
+	{ MODKEY|ShiftMask,    XK_w,                    spawn,          {.v = setcodemapcmd } },
+	{ MODKEY|ShiftMask,    XK_m,                    spawn,          {.v = setgamemapcmd } },
 	{ MODKEY|ShiftMask,    XK_p,                    spawn,          {.v = suspendcmd } },
 	{ MODKEY|ControlMask,  XK_s,                    spawn,          {.v = sktogglecmd } },
 	{ 0,                   XF86XK_AudioLowerVolume, spawn,          {.v = downvol } },
